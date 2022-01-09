@@ -189,7 +189,7 @@
     };
 
 
-    /* ajaxchimp
+    /* ajaxchimp 
      * ------------------------------------------------------ */
     const ssAjaxChimp = function () {
 
