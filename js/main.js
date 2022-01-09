@@ -1,7 +1,7 @@
 
 
 (function ($) {
-
+// failed trial at trying to use mail chimp
     "use strict";
 
     const cfg = {
