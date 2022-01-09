@@ -1,7 +1,7 @@
 
 
 (function ($) {
-// failed trial at trying to use mail chimp
+    // failed trial at trying to use mail chimp
     "use strict";
 
     const cfg = {
@@ -10,7 +10,7 @@
     };
     const $WIN = $(window);
 
- 
+
     const doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
@@ -99,7 +99,7 @@
      * ------------------------------------------------------ */
     const ssFinalCountdown = function () {
 
-        const finalDate = '2022/02/11';
+        const finalDate = '2022/02/24';
 
         $('.counter').countdown(finalDate)
             .on('update.countdown finish.countdown', function (event) {
