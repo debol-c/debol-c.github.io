@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/modernizr.js"></script>
+    <script defer src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
     <script defer src="js/contact.js"></script>
 
@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <!--    <link rel="manifest" href="site.webmanifest">-->
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
@@ -46,7 +46,7 @@
 
         <div class="header-logo">
             <a class="site-logo">
-                <img src="images/Debol.svg" alt="Homepage">
+                <img src="images/Queens.svg" alt="Homepage">
             </a>
         </div>
 
@@ -79,12 +79,11 @@
                     <h3>
                         Coming Soon
                     </h3>
-
                     <h1>
-                        Get ready everyone. <br>
-                        We are currently <br>
-                        working on a super <br>
-                        awesome application.
+                        In Collaboration with,<br>
+                        Queen's Super Market<br>
+                        we are working on <br>
+                        Debol.
                     </h1>
 
                 </div> <!-- end intro-content__text -->
@@ -145,15 +144,22 @@
                     get exclusive offer on our grand opening.
                 </p>
 
-                <form id="mc-form" class="group mc-form" novalidate="true" method="post" onsubmit="betaUserAdd()">
+                <div id="mc-form" class="group mc-form">
                     <input type="email" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
                         id="mc-email" placeholder="Email Address" required="">
+
+                    <label for="mc-phoneNumber">
+                    </label>
+                    <label for="mc-email" class="subscribe-message">
+                    </label>
+
                     <input type="tel" value="" name="PhoneNumber"
-                        class="email h-full-width h-text-center h-add-half-bottom" id="mc-phoneNumber"
-                        placeholder="Phone Number" required="">
-                    <input type="submit" name="subscribe" value="Subscribe" class="btn--small h-full-width">
-                    <label for="mc-email" class="subscribe-message"></label>
-                </form>
+                                                               class="email h-full-width h-text-center h-add-half-bottom" id="mc-phoneNumber"
+                                                               placeholder="Phone Number" required="">
+                    <button onclick="betaUserAdd()" name="subscribe" value="Subscribe" class="btn--small h-full-width">
+                        Subscribe
+                    </button>
+                </div>
 
             </div> <!-- end modal inner -->
         </div> <!-- end modal -->
@@ -218,13 +224,13 @@
                         <div class="row">
                             <div class="column">
                                 <p class="lead">
-                                    We are an up-and-coming technology firm run by a group of highly skilled
-                                    professionals. We are a digital transformation
-                                    delivery and software development company that provides cutting-edge engineering
-                                    solutions, helping companies and
-                                    enterprise clients untangle complex issues that always emerge during their day to
-                                    day business activities and digital
-                                    evolution journey.
+                                    We are working closely with our partners to facilitate the first-of-its-kind
+                                    e-commerce to help accommodate in serving additional customers. After the pandemic,
+                                    it is clear to see most of our
+                                    buying habits, and the pressure of balancing work-life has taken its toll. Making
+                                    sure that it is convenient for the
+                                    customer to purchase whatever they want, and getting it as soon as possible is what
+                                    we strive for.
                                 </p>
 
                                 <p>
@@ -276,11 +282,11 @@
                         <div class="row">
                             <div class="column">
                                 <p class="lead">
-                                    From IT strategy consulting and comprehensive technology roadmaps to the end-to-end
-                                    development of scalable solutions,
-                                    Debol Tech delivers a full-cycle software development services that adapt
-                                    seamlessly to your project requirements and
-                                    business needs.
+                                    We have a website or application that aggregates or organizes multiple offers
+                                    from competing companies and sells them to
+                                    consumers in one place. We create several partnerships and sign contracts with
+                                    the chosen businesses so that we can have
+                                    a consolidated offering operating under one brand.
                                 </p>
                             </div>
                         </div>
@@ -289,63 +295,59 @@
 
                             <div class="column services-list__item">
                                 <div class="services-list__item-content">
-                                    <h4 class="item-title">Ecommerce Aggeration</h4>
+                                    <h4 class="item-title">On Site Pick Up</h4>
                                     <p>
-                                        We have a website or application that aggregates or organizes multiple offers
-                                        from competing companies and sells them to
-                                        consumers in one place. We create several partnerships and sign contracts with
-                                        the chosen businesses so that we can have
-                                        a consolidated offering operating under one brand.
+                                        We facilitate ordering and picking up items through our application or website
+                                        to the closest branch located while
+                                        ordering. The location may be also set by your choice if you want to pick the
+                                        items in a specific location.
                                     </p>
                                 </div>
                             </div>
 
                             <div class="column services-list__item">
                                 <div class="services-list__item-content">
-                                    <h4 class="item-title">ERP</h4>
+                                    <h4 class="item-title">Delivery</h4>
+                                    <p>
+                                        We deliver all the items you have ordered online directly to your home without
+                                        any hassle of coming to any location to
+                                        buy items.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="column services-list__item">
+                                <div class="services-list__item-content">
+                                    <h4 class="item-title">Payment Processing </h4>
+                                    <p>
+                                        Payment can be carried in several ways you can pay with cash, or the bank of
+                                        your choice that's available on the
+                                        application.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="column services-list__item">
+                                <div class="services-list__item-content">
+                                    <h4 class="item-title">Point of Sales System (POS)</h4>
+                                    <p>
+                                        We also provide seamless integration of items being sold by the institution with
+                                        our web application. That can enable
+                                        owners to check out their inventory at any point, and the underlying performance
+                                        of each
+                                        point of sale instance.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="column services-list__item">
+                                <div class="services-list__item-content">
+                                    <h4 class="item-title"> ERP Desgin / Development</h4>
                                     <p>
                                         We support your business infrastructure with scalable software that improves key
                                         facets of your enterprise. Get access
                                         to our industry-specific knowledge to design, build, and scale your new
                                         enterprise software solution.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Web Design / Development </h4>
-                                    <p>
-                                        We transform your idea into a creative web platform that represents your brand
-                                        effectively. Our expert developers
-                                        provide your business with a wide range of benefits like seo friendly web
-                                        design, website redesigning and custom web
-                                        apps development to optimize organizational functioning.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Network Desigin</h4>
-                                    <p>
-                                        From data cabling & PC setup, to server & router configurations, we provide the
-                                        best network implementation & business
-                                        network design services.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Mobile Desgin / Development</h4>
-                                    <p>
-                                        We design fully-equipped smartphone apps solutions for the constantly evolving
-                                        behaviour of customers. Our application
-                                        development process fulfills all the digital needs of all industries and attunes
-                                        to the latest market trends &
-                                        technologies. We integrate advanced features and functionalities, in any IOS and
-                                        Android mobile application we develop.
                                     </p>
                                 </div>
                             </div>
