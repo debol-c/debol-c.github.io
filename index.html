@@ -19,13 +19,13 @@
 
     <script defer src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
-    <script defer src="js/contact.js"></script>
+    <script defer src="js/additional.js"></script>
+    <script defer src="https://www.google.com/recaptcha/api.js" async></script>
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
@@ -55,7 +55,7 @@
                 <path
                     d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" />
             </svg>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=customer@debol.co&su=SUBJECT&body=BODY">customer@debol.co</a>
+            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=customer@debol.co&su=SUBJECT&body=BODY">customer@debol.co</a>
         </div>
 
     </header> <!-- end s-header -->
@@ -145,23 +145,32 @@
                 </p>
 
                 <div id="mc-form" class="group mc-form">
-                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
-                        id="mc-email" placeholder="Email Address" required>
+
+                    <div><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
+                                id="mc-email" placeholder="Email Address" required></div>
 
                     <label for="mc-phoneNumber">
                     </label>
                     <label for="mc-email" class="subscribe-message">
                     </label>
 
-                    <input type="tel" value="" name="PhoneNumber"
+                    <div><input type="tel" value="" name="PhoneNumber"
                                                                class="email h-full-width h-text-center h-add-half-bottom" id="mc-phoneNumber"
-                                                               placeholder="Phone Number" required>
+                                placeholder="Phone Number" required></div>
+
+                    <div class="g-recaptcha"
+                         data-sitekey="6LcWGwseAAAAADpFTT60bVY_xWjVvrCW7hyvo6Dm"
+                         data-callback="enableBtn"
+                    ></div>
+
+                    <div style="margin-top: 5%; margin-bottom: 2.5%; color: transparent;">
+                        Spacer
+                    </div>
 
 
-
-                    <button onclick="betaUserAdd()" name="subscribe" value="Subscribe" class="btn--small h-full-width">
+                    <div></div><button onclick="betaUserAdd()" style="cursor: pointer" disabled=disabled id="form-button" name="subscribe" value="Subscribe" class="btn--small h-full-width">
                         Subscribe
-                    </button>
+                </button></div>
                 </div>
 
             </div> <!-- end modal inner -->

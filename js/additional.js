@@ -4,9 +4,15 @@ const url = "https://derash.herokuapp.com/user";
 async function betaUserAdd(){
     let email = document.querySelector("#mc-email");
     let phoneNumber = document.querySelector("#mc-phoneNumber");
+
     let data = {
         email: email.value,
         phoneNumber: phoneNumber.value
+    }
+
+    if((email.value === "" || email.value === null || email.value === undefined) && (phoneNumber.value === "" || phoneNumber.value === null || phoneNumber.value === undefined)){
+        console.log("Values empty")
+        return;
     }
 
     const response = await fetch(url, {
@@ -22,4 +28,8 @@ async function betaUserAdd(){
     location.reload();
     return false;
 
+}
+
+function enableBtn(){
+    document.getElementById("form-button").disabled = false;
 }
