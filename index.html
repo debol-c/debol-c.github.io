@@ -19,12 +19,13 @@
 
     <script src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
+    <script defer src="js/contact.js"></script>
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <!--    <link rel="manifest" href="site.webmanifest">-->
 
 </head>
 
@@ -143,13 +144,12 @@
                     Be the first to know about the latest updates and
                     get exclusive offer on our grand opening.
                 </p>
-                <!--Kerod This is where I need you-->
 
-                <form id="mc-form" class="group mc-form" novalidate="true">
+                <form id="mc-form" class="group mc-form" novalidate="true" method="post" onsubmit="betaUserAdd()">
                     <input type="email" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
                         id="mc-email" placeholder="Email Address" required="">
                     <input type="tel" value="" name="PhoneNumber"
-                        class="email h-full-width h-text-center h-add-half-bottom" id="mc-email"
+                        class="email h-full-width h-text-center h-add-half-bottom" id="mc-phoneNumber"
                         placeholder="Phone Number" required="">
                     <input type="submit" name="subscribe" value="Subscribe" class="btn--small h-full-width">
                     <label for="mc-email" class="subscribe-message"></label>
