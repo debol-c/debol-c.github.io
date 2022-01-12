@@ -55,7 +55,7 @@
                 <path
                     d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z" />
             </svg>
-            <a href="mailto:#0">customer@debol.co</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=customer@debol.co&su=SUBJECT&body=BODY">customer@debol.co</a>
         </div>
 
     </header> <!-- end s-header -->
@@ -145,8 +145,8 @@
                 </p>
 
                 <div id="mc-form" class="group mc-form">
-                    <input type="email" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
-                        id="mc-email" placeholder="Email Address" required="">
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" value="" name="EMAIL" class="email h-full-width h-text-center h-add-half-bottom"
+                        id="mc-email" placeholder="Email Address" required>
 
                     <label for="mc-phoneNumber">
                     </label>
@@ -155,7 +155,10 @@
 
                     <input type="tel" value="" name="PhoneNumber"
                                                                class="email h-full-width h-text-center h-add-half-bottom" id="mc-phoneNumber"
-                                                               placeholder="Phone Number" required="">
+                                                               placeholder="Phone Number" required>
+
+
+
                     <button onclick="betaUserAdd()" name="subscribe" value="Subscribe" class="btn--small h-full-width">
                         Subscribe
                     </button>
