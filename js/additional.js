@@ -1,5 +1,6 @@
-const url = "https://derash.herokuapp.com/user";
+// const url = "https://derash.herokuapp.com/user";
 // const url = "http://localhost:1111/user/";
+const url = "http://31.220.21.156:1111/user";
 
 async function betaUserAdd(){
     let email = document.querySelector("#mc-email");
@@ -11,7 +12,6 @@ async function betaUserAdd(){
     }
 
     if((email.value === "" || email.value === null || email.value === undefined) && (phoneNumber.value === "" || phoneNumber.value === null || phoneNumber.value === undefined)){
-        console.log("Values empty")
         return;
     }
 
@@ -23,8 +23,26 @@ async function betaUserAdd(){
         body: JSON.stringify(data)
     });
 
+    // email.value = "";
+    // phoneNumber.value = "";
+    // grecaptcha.reset();
+
+    // let myToast = Toastify({
+    //     text: "You have been entered in the Beta Test Program",
+    //     duration: 5000,
+    //     gravity: 'bottom',
+    //     callback: function (){
+    //         location.reload();
+    //         return false;
+    //     }
+    // })
+    //
+    // myToast.showToast();
+
     location.reload();
     return false;
+
+
 
 }
 
