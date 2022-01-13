@@ -23,8 +23,6 @@ async function betaUserAdd(){
         body: JSON.stringify(data)
     });
 
-
-
     location.reload();
     return false;
 
