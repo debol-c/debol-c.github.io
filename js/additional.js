@@ -1,7 +1,7 @@
-// const url = "https://derash.herokuapp.com/user";
+const url = "https://derash.herokuapp.com/user";
 // const url = "http://localhost:1111/user/";
 
-const url = "http://31.220.21.156:1111/user";
+// const url = "http://31.220.21.156:1111/user";
 
 async function betaUserAdd(){
     let email = document.querySelector("#mc-email");
