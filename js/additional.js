@@ -17,6 +17,7 @@ async function betaUserAdd(){
     }
 
 
+    console.log(data);
 
     const response = await fetch(url, {
         method: 'POST',
@@ -26,8 +27,10 @@ async function betaUserAdd(){
         body: JSON.stringify(data)
     });
 
-    location.reload();
-    return false;
+    console.log(response);
+
+    // location.reload();
+    // return false;
 
 
 
