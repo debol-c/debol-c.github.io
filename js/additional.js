@@ -29,8 +29,8 @@ async function betaUserAdd(){
 
     console.log(response);
 
-    // location.reload();
-    // return false;
+    location.reload();
+    return false;
 
 
 
