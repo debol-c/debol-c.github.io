@@ -5,6 +5,7 @@ const url = "https://derash.herokuapp.com/user";
 async function betaUserAdd(){
     let email = document.querySelector("#mc-email");
     let phoneNumber = document.querySelector("#mc-phoneNumber");
+    const modal = document.querySelector(".modal");
 
     if((email.value === "" || email.value === null || email.value === undefined) && (phoneNumber.value === "" || phoneNumber.value === null || phoneNumber.value === undefined)){
         location.reload();
@@ -19,6 +20,7 @@ async function betaUserAdd(){
     email.value = "";
     phoneNumber.value = "";
     grecaptcha.reset();
+    modal.classList.remove("show-modal");
 
     console.log(data);
 
@@ -36,4 +38,11 @@ async function betaUserAdd(){
 
 function enableBtn(){
     document.getElementById("form-button").disabled = false;
+}
+
+function openModal (){
+    const modal = document.querySelector(".modal");
+    const trigger = document.querySelector(".modal-trigger");
+    const closeButton = document.querySelector(".modal__close");
+    modal.classList.toggle("show-modal");
 }
