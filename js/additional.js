@@ -2,6 +2,14 @@ const url = "https://derash.herokuapp.com/user";
 // const url = "http://localhost:1111/user/";
 // const url = "http://31.220.21.156:1111/user";
 
+window.onload = openModalFunction;
+
+function openModalFunction(){
+    const modal = document.querySelector(".modal");
+    modal.classList.add("show-modal");
+        
+}
+
 async function betaUserAdd(){
     let email = document.querySelector("#mc-email");
     let phoneNumber = document.querySelector("#mc-phoneNumber");
